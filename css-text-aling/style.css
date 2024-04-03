@@ -1,0 +1,30 @@
+body{
+    background-color: bisque;
+}
+p{
+    margin: 4px;
+}
+.container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box{
+margin-bottom: 15px;
+border-radius: 3px;
+padding-left: 10px;
+padding-right: 10px;
+font-size: larger;
+font-family: Cambria;
+border: solid black 1px;
+background-color:lightgrey;
+}
+
+.box-2 {
+
+    text-align: center;
+}
+.box-3 {
+
+    text-align: end;
+}

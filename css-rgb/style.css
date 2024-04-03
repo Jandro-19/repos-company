@@ -1,0 +1,72 @@
+body {
+    background-color: #B9DA8F;
+}
+
+.primarios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    height: 100%;
+    margin: 0;
+}
+
+
+h1 {
+    text-align: left;
+}
+
+
+.bola {
+    float: left;
+    margin: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.bola2{
+    float: left;
+    margin: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+}
+
+
+.clearfix {
+    clear: both
+}
+
+.bola-roja {
+    background: red;
+}
+
+.bola-verde {
+    background: #01FF02;
+}
+
+.bola-azul {
+    background: #0000FE;
+}
+
+.bola-lila {
+    background: #FF00FE;
+}
+
+.bola-cian {
+    background: #00FEFF;
+}
+
+.bola-amarilla {
+    background: #FFFF00;
+}

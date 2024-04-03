@@ -1,0 +1,13 @@
+.todo {
+    display: flex;
+}
+  
+.texto {
+ float: left;
+}
+  
+img {
+    width: 50%;
+    height: auto;
+    float: right;
+}

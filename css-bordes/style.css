@@ -1,0 +1,10 @@
+.border {
+    
+    margin: 50px;
+    padding: 50px;
+
+    border-top:dotted green 4px;
+    border-right:dashed blue 10px ;
+    border-left: double black 8px;
+    border-bottom: solid red 4px;
+}

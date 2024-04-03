@@ -1,0 +1,28 @@
+table{
+    width:450px ;
+    background-color: #FEE4C3;
+}
+tbody tr td{
+    border-bottom: solid black 1px;
+    border-left: solid black 0.5px;
+    text-align: center;
+    padding-top: px;
+}
+.color-titulo{
+    background-color:#00C1FA;
+    text-align: center;
+}
+
+.borde{
+    border: solid black 2px;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+.color-fondo{
+background-color: #E6E6FA;
+}
+
+.iva{
+    justify-content: center;
+    align-items: center;
+}

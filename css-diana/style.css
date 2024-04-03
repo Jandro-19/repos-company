@@ -1,0 +1,95 @@
+body{
+    background-color: greenyellow;
+}
+
+.circulo{
+    border-radius: 50%;
+    position: absolute;
+    align-items: center;
+}
+.circulo-rojo {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+    background-color: red; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    margin: 50px;
+    box-shadow: 1px 1px 20px red;
+
+}
+
+.linea{
+    width: 100%; 
+    height: 2px; 
+    background-color: black; 
+    position: absolute;
+    top: 1; 
+    z-index: 1
+}
+.linea2{
+    width: 2px; 
+    height:100%; 
+    background-color: black; 
+    position: absolute;
+    top: 1; 
+    z-index: 1
+}
+
+.circulo-blanco {
+    width: 180px; 
+    height: 180px;
+    background-color: white;
+}
+
+.circulo-rojo2 {
+    width: 160px;
+    height: 160px; 
+    background-color: red;
+
+}
+.circulo-blanco2 {
+    width: 140px;
+    height: 140px;
+    background-color: white;
+
+}
+.circulo-rojo3 {
+    width: 120px;
+    height: 120px;
+    background-color: red;
+
+}
+.circulo-blanco3 {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+
+}
+
+.circulo-rojo4 {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+
+}
+.circulo-blanco4 {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+
+}
+.circulo-rojo5 {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+
+}
+img{
+    height: 210px;
+    width: 210px;
+    margin-left: 50px;
+
+}

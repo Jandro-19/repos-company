@@ -1,0 +1,41 @@
+.contenedor {
+    width: 200px; 
+    height: 200px; 
+    position: relative; 
+    background-color: red;
+    border: solid black 2px;
+    margin: 100px;
+}
+
+.circulo {
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%; 
+    background-color: greenyellow; 
+    position: absolute; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    border: solid black 2px;
+
+}
+
+.circulo1 {
+    top: -8px;
+    left: -8px;
+}
+
+.circulo2 {
+    top: -8px;
+    right: -8px;
+}
+
+.circulo3 {
+    bottom: -8px;
+    left: -8px;
+}
+
+.circulo4 {
+    bottom: -8px;
+    right: -8px;
+}
