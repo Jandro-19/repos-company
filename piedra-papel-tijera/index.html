@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra, Papel y Tijera</title>
+    <link rel="stylesheet" href="/piedra-papel-tijera/style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>PIEDRA, PAPEL & TIJERA</h1>
+      <div class="grid-wapo">
+      <div class="centro" id="elegir">
+        
+        <div class="botones otros-botones">
+          <button onclick="jugar('Piedra')" class="btn-sin-borde">
+            <img src="/piedra-papel-tijera/piedra.png" width="150px" />
+          </button>
+        </div>
+        <div class="botones"><p class="jugador">JUGADOR</p>
+          <button onclick="jugar('Papel')" class="btn-sin-borde">
+            <img src="/piedra-papel-tijera/papel.png" width="150px" />
+          </button>
+        </div>
+        <div class="botones otros-botones">
+          <button onclick="jugar('Tijera')" class="btn-sin-borde">
+            <img src="/piedra-papel-tijera/tijera.png" width="150px" />
+          </button>
+        </div>
+      </div>
+      <div><p class="jugador">MARCADOR</p>
+        <div>
+        <ul>
+          <li id="victoria">Victorias:</li>
+          <li id="empate">Empates:</li>
+          <li id="derrota">Derrotas:</li>
+        </ul>
+        </div>
+      </div>
+
+    </div>
+    <div id="resultado" class="resultado-2"></div>
+    </div>
+
+    
+    
+    <script src="/piedra-papel-tijera/main.js"></script>
+  </body>
+</html>
