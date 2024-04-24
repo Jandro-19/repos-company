@@ -105,9 +105,12 @@ img{
     background-color: white;
 }
 
-.barra-poder-eat{
-    border: none ;
+#barra-poder-eat, 
+#barra-poder-play, 
+#barra-poder-fight, 
+#barra-poder-sleep{
     width: 398px;
+    border: none ;
     height: 10px;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -117,6 +120,7 @@ img{
     margin-left: 1px;
     background-color: rgb(30, 255, 0);
 }
+
 
 .posicion-fight{
     margin-top: 150px;
