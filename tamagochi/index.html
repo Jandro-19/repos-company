@@ -13,24 +13,23 @@
   <div class="container">
     <div class="box1">
         <div>
-            <button class="boton-eat">🍖</button>
-            <button class="boton-eat">🥩</button>
-            <button class="boton-eat">🍗</button>
+            <button class="boton-eat" onclick="sumarVida('barra-poder-eat', 5)">🍖</button>
+            <button class="boton-eat" onclick="sumarVida('barra-poder-eat', 10)">🥩</button>
+            <button class="boton-eat" onclick="sumarVida('barra-poder-eat', 15)">🍗</button>
             <div class="barra-eat">
                 <div id="barra-poder-eat"></div>
             </div>
             <div class="barra-luffy"><div class="barra-poder-luffy"></div></div>
             <p class="alinear-eat">EAT</p>
             <img id="imagen-personaje" src="/tamagochi/img/luffy.png" alt="Imagen de Luffy">
-<button class="boton-sleep" onclick="cambiarImagen()">🔄️</button>
-
+            <button class="boton-sleep" onclick="cambiarImagenYReiniciar()">🔄️</button>
         </div>
     </div>
     <div class="box2">
         <div class="posicion-play">
-            <button class="boton-play">🛶</button>
-            <button class="boton-play">🏓</button>
-            <button class="boton-play">🛹</button>
+            <button class="boton-play" onclick="sumarVida('barra-poder-play', 8)">🛶</button>
+            <button class="boton-play" onclick="sumarVida('barra-poder-play', 12)">🏓</button>
+            <button class="boton-play" onclick="sumarVida('barra-poder-play', 20)">🛹</button>
             <div class="barra-eat">
                 <div id="barra-poder-play"></div>
             </div>
@@ -40,8 +39,8 @@
     <div class="box3">
         <div class="posicion-fight">
             <p class="alinear-fight">FIGHT</p>
-            <button class="boton-fight">🤜</button>
-            <button class="boton-fight">🔫</button>
+            <button class="boton-fight" onclick="sumarVida('barra-poder-fight', 3)">🤜</button>
+            <button class="boton-fight" onclick="sumarVida('barra-poder-fight', 6)">🔫</button>
             <div class="barra-eat">
                 <div id="barra-poder-fight"></div>
             </div>
@@ -50,15 +49,15 @@
     <div class="box4">
         <div class="posicion-sleep">
             <p class="alinear-sleep">SLEEP</p>
-            <button class="boton-sleep">🛏️</button>
-            <button class="boton-sleep">💤</button>
+            <button class="boton-sleep" onclick="sumarVida('barra-poder-sleep', 2)">🛏️</button>
+            <button class="boton-sleep" onclick="sumarVida('barra-poder-sleep', 4)">💤</button>
             <div class="barra-eat">
                 <div id="barra-poder-sleep"></div>
             </div>
-            
         </div>
     </div>
-  </div>
+</div>
+
 
 
 
