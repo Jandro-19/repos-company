@@ -1,18 +1,19 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const barraPoderEat = document.getElementById('barra-poder-eat');
-    const barraPoderPlay = document.getElementById('barra-poder-play');
-    const barraPoderFight = document.getElementById('barra-poder-fight');
-    const barraPoderSleep = document.getElementById('barra-poder-sleep');
+const barraPoderEat = document.getElementById('barra-poder-eat');
+const barraPoderPlay = document.getElementById('barra-poder-play');
+const barraPoderFight = document.getElementById('barra-poder-fight');
+const barraPoderSleep = document.getElementById('barra-poder-sleep');
+let porcentajeEat = 100;
+let max = 100;
+
+document.addEventListener('DOMContentLoaded', function() {  
+
 
     function reducirBarraEat() {
-        let anchoActual = barraPoderEat.offsetWidth;
-        let nuevoAncho = anchoActual - 1;
-
-        if (nuevoAncho >= 0) {
-            barraPoderEat.style.width = nuevoAncho + 'px';
-        } else {
-            clearInterval(intervaloEat);
-        }
+    
+        porcentajeEat -= Math.floor(Math.random()*1.2);
+        barraPoderEat.style.width = porcentajeEat + '%';
+        porcentajeEat= Math.max(0,porcentajeEat);
+        actualizarbarra();
     }
 
     function reducirBarraPlay() {
@@ -46,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    const intervaloEat = setInterval(reducirBarraEat, 100);
+    const intervaloEat = setInterval(reducirBarraEat, 60);
     const intervaloPlay = setInterval(reducirBarraPlay, 200);
     const intervaloFight = setInterval(reducirBarraFight, 500);
     const intervaloSleep = setInterval(reducirBarraSleep, 400);
@@ -111,3 +112,14 @@ function cambiarImagen() {
 
     imagen.src = siguienteSrc;
 }
+
+function sumarVida(monto) {
+    porcentajeEat = Math.min(101, porcentajeEat);
+    porcentajeEat += monto; 
+    porcentajeEat = Math.min(porcentajeEat, max);
+    actualizarbarra();
+}
+
+function actualizarbarra (){
+ barraPoderEat.style.width = porcentajeEat + '%';
+};

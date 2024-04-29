@@ -119,6 +119,12 @@ img{
     -o-border-radius: 15px;
     margin-left: 1px;
     background-color: rgb(30, 255, 0);
+    overflow: hidden;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    -o-transition: 1s ease;
 }
 
 
