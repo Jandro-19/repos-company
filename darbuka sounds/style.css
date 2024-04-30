@@ -9,53 +9,108 @@
     z-index: -1;
 }
 
-.titulo{
-    text-align: left; 
-    font-family: Comic Sans MS; 
-    font-weight:bold; 
+.titulo {
     text-align: center;
-    font-size: 60px; 
-    color: #4c1be0; 
-    text-shadow: -1px 0 #d0d3da, 0 1px #d0d3da, 1px 0 #d0d3da, 0 -1px #d0d3da, -2px 2px 0 #d0d3da, 2px 2px 0 #d0d3da, 1px 1px #d0d3da, 2px 2px #d0d3da, 3px 3px #d0d3da, 4px 4px #d0d3da, 5px 5px #d0d3da; 
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    font-size: 69px;
+    color: #adaab7;
+    text-shadow: -1px 0 #d0d3da, 0 1px #d0d3da, 1px 0 #d0d3da, 0 -1px #d0d3da, -2px 2px 0 #d0d3da, 2px 2px 0 #d0d3da, 1px 1px #d0d3da, 2px 2px #d0d3da, 3px 3px #d0d3da, 4px 4px #d0d3da, 5px 5px #d0d3da;
+    animation: movimiento 1s infinite alternate;
+    -webkit-animation: movimiento 2s infinite alternate;
+}
+
+@keyframes movimiento {
+    0% {
+        transform: translateX(10px);
+        -webkit-transform: translateX(10px);
+        -moz-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        -o-transform: translateX(10px);
+}
+    100% {
+        transform: translateX(-10px);
+        -webkit-transform: translateX(-10px);
+        -moz-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        -o-transform: translateX(-10px);
+}
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin-top: 100px;
+    height: 100px;
+}
+
+.container2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sound-btn {
     padding: 10px 20px;
     margin: 10px;
-    background-color: #007bff;
+    background-color: #b2bbc4;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     font-size: 16px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .sound-btn:hover {
-    background-color: #0056b3;
+    background-color: #878b8f;
 }
 
-.btn-with-bg {
-    background-image: url('darbuka sounds\sounds\buttons\g-button.png');
-    background-size: cover;
-    background-position: center;
-    width: 50px; 
-    height: 50px; 
-    border: none; 
-    cursor: pointer; 
-    color: white; 
-    text-align: center; 
-    line-height: 50px; 
-    font-size: 16px; 
-    font-weight: bold;
+.stop-btn {
+    background-color: #ff1100;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: stop 2s infinite alternate;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
-.btn-with-bg:hover {
-    opacity: 0.8;
+@keyframes stop {
+
+0% {
+    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
 }
+
+100% {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+}
+
+.stop-btn:hover {
+    background-color: #d32f2f;
+}
+
+.stop-btn:focus {
+    outline: none; 
+}
+
