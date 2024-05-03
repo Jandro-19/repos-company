@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Coches</title>
+    <link rel="stylesheet" href="/proyect-1/style.css">
+</head>
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <img class="titulo" src="/proyect-1/img/titulo.png" alt="">
+            <div class="wrapper">
+                <button class="continuar" onclick="cerrarModal()">
+                  CONTINUAR 
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="grass">
+            <button class="boton-coche" type="button" onclick="cambiarImagen()">🎨</button>
+        </div>
+        <div class="road">
+            <div class="line"></div>
+            <div class="car">
+                <img id="car-class" src="/proyect-1/img/car-1.png" alt="">
+            </div>
+        </div>  
+        <div class="grass2"><img class="teclas" src="/proyect-1/img/teclas.png" alt=""></div>
+    </div>
+
+    <div id="myPopup" class="popup">
+        <div class="popup-content">
+            <h2>¡Has perdido!</h2>
+            <p>Lo siento, tu coche se ha salido de la carretera.</p>
+            <button class="reiniciar" onclick="cerrarModal()">Reiniciar</button>
+        </div>
+    </div>
+    
+
+    <script src="/proyect-1/main.js"></script>
+</body>
+</html>

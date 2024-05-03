@@ -59,25 +59,6 @@ function cambiarImagenYReiniciar() {
     reiniciarBarras();
 }
 
-function cambiarImagen() {
-    var imagen = document.getElementById('imagen-personaje');
-    
-    var srcActual = imagen.src;
-    
-    var srcAlternativos = [
-        "/tamagochi/img/zoro.png",
-        "/tamagochi/img/sanji.png"
-    ];
-    
-    var indiceActual = srcAlternativos.indexOf(srcActual);
-    
-    var siguienteIndice = (indiceActual + 1) % srcAlternativos.length;
-    
-    var siguienteSrc = srcAlternativos[siguienteIndice];
-    
-    imagen.src = siguienteSrc;
-}
-
 function reiniciarBarras() {
     document.getElementById('barra-poder-eat').style.width = '100%';
     document.getElementById('barra-poder-play').style.width = '100%';

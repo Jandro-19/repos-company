@@ -55,7 +55,7 @@
 .sound-btn {
     padding: 10px 20px;
     margin: 10px;
-    background-color: #b2bbc4;
+    background-color: #d4d9df;
     color: #fff;
     border: none;
     border-radius: 15px;
@@ -90,11 +90,11 @@
 @keyframes stop {
 
 0% {
-    transform: translateY(100px);
-    -webkit-transform: translateY(100px);
-    -moz-transform: translateY(100px);
-    -ms-transform: translateY(100px);
-    -o-transform: translateY(100px);
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
 }
 
 100% {

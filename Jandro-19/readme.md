@@ -1,7 +1,4 @@
-![banner](/github-profile/Jandro-19/github-profile.gif)
-
-
-# Hola, soy < JANDRO > 👋
+![banner](/Jandro-19/github-profile.gif)
 
 ¡Bienvenido a mi perfil de GitHub! Soy Alejandro, un apasionado de la tecnología y la programación.
 
