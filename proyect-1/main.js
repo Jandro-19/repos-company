@@ -31,8 +31,17 @@ function cambiarImagen() {
     imagen.src = siguienteSrc;
 }
 
-var posX = 0;
+var posX = 0; 
+var posY = 0; 
 var velocidadMovimiento = 10; 
+
+
+function moverIzquierda() {
+    var imagen = document.getElementById('car-class');
+    posX -= velocidadMovimiento;
+    imagen.style.left = posX + 'px';
+    detectarColision();
+}
 
 function moverDerecha() {
     var imagen = document.getElementById('car-class');
@@ -41,10 +50,18 @@ function moverDerecha() {
     detectarColision();
 }
 
-function moverIzquierda() {
+function moverArriba() {
     var imagen = document.getElementById('car-class');
-    posX -= velocidadMovimiento;
-    imagen.style.left = posX + 'px';
+    posY -= velocidadMovimiento;
+    imagen.style.top = posY + 'px';
+    detectarColision();
+}
+
+
+function moverAbajo() {
+    var imagen = document.getElementById('car-class');
+    posY += velocidadMovimiento;
+    imagen.style.top = posY + 'px';
     detectarColision();
 }
 
@@ -56,8 +73,15 @@ document.addEventListener('keydown', function(event) {
         case 'ArrowLeft':
             moverIzquierda();
             break;
+        case 'ArrowUp':
+            moverArriba();
+            break;
+        case 'ArrowDown':
+            moverAbajo();
+            break;
     }
 });
+
 
 var modal = document.getElementById('myPopup');
 

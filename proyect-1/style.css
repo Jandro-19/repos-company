@@ -165,26 +165,34 @@ button:hover{
     grid-template-columns: 1fr 2fr 1fr;
 }
 
-.grass{
+.grass, .grass2{
     background-color: green;
     position: relative;
+    z-index: 0; 
+}
+
+.grass {
     border-right: 8px solid rgb(201, 201, 201);
 }
 
-.grass2{
-    background-color: green;
-    position: relative;
+.grass2 {
     border-left: 8px solid rgb(201, 201, 201);
 }
 
-.car {
-    width: 50px;
-    height: 100px;
+#car-class {
+    width: 130px;
+    height: 300px;
     margin-bottom: 200px;
     position: relative;
-    bottom: 20px;   
-    left: 45%; 
-    transform: translateX(-50%); 
+    bottom: 20px;
+    left: 45%;
+    transform: translateX(-50%);
+    z-index: 99;
+    transition: transform 1s ease;
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
 }
 
 .car img {
@@ -194,20 +202,17 @@ button:hover{
 }
 
 
+
 .line {
     width: 2px;
-    height: 100%;
+    height: 0;
     position: absolute;
-    top: 0;
+    top: -20px;
     left: 50%;
     transform: translateX(-50%);
     border-left: 20px dashed rgb(255, 255, 255);
     z-index: 0;
-    animation:walk 8s linear infinite;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
+    animation: moveUpDown 6s linear infinite;
 }
 
 .road {
