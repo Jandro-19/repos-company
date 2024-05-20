@@ -1,0 +1,30 @@
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.key {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #000;
+    cursor: pointer;
+    user-select: none;
+}
+.key.active {
+    background-color: #ddd;
+}
+.output {
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 80%;
+    max-width: 600px;
+    min-height: 50px;
+}
+.key[data-key="BACKSPACE"] {
+    grid-column: span 2;
+    background-color: rgb(240, 95, 95);
+    color: #fff;
+}
